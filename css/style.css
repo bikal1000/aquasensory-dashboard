@@ -144,7 +144,7 @@ ul li{
     padding-left: 66px;
 }
 .third-part img:hover{
-
+    opacity: 0.7;
 }
 .fourth-part{
     height: 120px;
@@ -198,7 +198,7 @@ ul li{
     margin-bottom: 60px;
     font-weight: normal;
 }
-.circle-section h4{
+.tribe-circle-section h4{
     font-family: var(--big-bottom);
     color: var(--dark-blue);
     font-weight: normal;
@@ -225,7 +225,7 @@ ul li{
     font-size: 20px;
     line-height: 1.5;
 }
-.circle-content{
+.tribe-circle-content{
     border-radius: 50%;
     background: #000000;
     width: 130px;
@@ -246,59 +246,59 @@ ul li{
     z-index: -1;
     opacity: 0;
 }
-.circle:nth-child(2) .circle-content{
+.tribe-circle:nth-child(2) .tribe-circle-content{
      left: -80px;
     position: absolute;
     top: -120px;
 }
-.circle:nth-child(3) .circle-content{
+.tribe-circle:nth-child(3) .tribe-circle-content{
      left: -50px;
     position: absolute;
     top: -120px;
 }
-.circle:nth-child(4) .circle-content{
+.tribe-circle:nth-child(4) .tribe-circle-content{
      left: -30px;
     position: absolute;
     top: -120px;
 }
-.circle:nth-child(5) .circle-content{
+.tribe-circle:nth-child(5) .tribe-circle-content{
      left: -10px;
     position: absolute;
     top: -110px;
 }
-.circle-content > h5 {
+.tribe-circle-content > h5 {
     font-family: var(--big-bottom);
     line-height: 1.5;
 }
-.main-circle:nth-child(1) .circle-content
+.main-circle:nth-child(1) .tribe-circle-content
 {
     background: var(--blood-red);
 }
-.main-circle:nth-child(2) .circle-content
+.main-circle:nth-child(2) .tribe-circle-content
 {
     background: #ED7D31;
 }
-.main-circle:nth-child(3) .circle-content
+.main-circle:nth-child(3) .tribe-circle-content
 {
     background: #00AF50;
 }
-.main-circle:nth-child(4) .circle-content
+.main-circle:nth-child(4) .tribe-circle-content
 {
     background: #E8E90F;
 }
-.main-circle:nth-child(5) .circle-content
+.main-circle:nth-child(5) .tribe-circle-content
 {
     background: #9D00B0;
 }
-.main-circle:nth-child(6) .circle-content
+.main-circle:nth-child(6) .tribe-circle-content
 {
     background: #0170C1;
 }
-.main-circle:nth-child(7) .circle-content
+.main-circle:nth-child(7) .tribe-circle-content
 {
     background: #01B0F1;
 }
-.circle:hover .circle-content{
+.tribe-circle:hover .tribe-circle-content{
     transform: scale(1);
     opacity: 1;
     z-index: 9999;
@@ -306,10 +306,10 @@ ul li{
 .main-circle span{
     padding: 15px;
 }
-.circle {
+.tribe-circle {
     position: absolute;
 }
-.circle > a{
+.tribe-circle > a{
     display: block;
     width: 20px;
     height: 20px;
@@ -528,7 +528,7 @@ ul li{
          margin: 15px 20px 20px 10px;
         font-size: 12px;
     }
-    .circle-section h4{
+    .tribe-circle-section h4{
         left: 342px;
         width: 100%;
     }
@@ -582,7 +582,7 @@ ul li{
         width:70px;
         height: 70px;
     }
-    .circle-section h4{
+    .tribe-circle-section h4{
         left: 0;
         width: 100%;
         top: 597px;
@@ -642,7 +642,7 @@ ul li{
         width:65px;
         height: 65px;
     }
-    .circle-section h4{
+    .tribe-circle-section h4{
         left: 0px;
         width: 100%;
         top: 597px;
@@ -704,7 +704,7 @@ ul li{
         margin-top: 25px;
         margin-left: 0;
     }
-     .circle-section h4{
+     .tribe-circle-section h4{
         left: 0px;
         width: 100%;
         top: 597px;
@@ -831,7 +831,7 @@ ul li{
     .third-part img{
         padding: 0px;
     }
-    .circle-section h4{
+    .tribe-circle-section h4{
         position: relative;
         top: 0px;
         margin-bottom: 40px;
