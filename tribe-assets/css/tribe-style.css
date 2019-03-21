@@ -209,14 +209,14 @@
      text-align: center;
      position: relative;
 }
- .connecting-dot-section h2{
+/* .connecting-dot-section h2{
      color: var(--dark-blue);
      font-family: var(--big-bottom);
      font-size: 32px;
      line-height: 50px;
      margin-bottom: 60px;
      font-weight: normal;
-}
+}*/
  .tribe-circle-section h4{
      font-family: var(--big-bottom);
      color: var(--dark-blue);
@@ -403,7 +403,7 @@
      border-top: 3px dashed var(--dark-blue);
 }
 
- .expert-insight-section h2, .expert-insight-section-p h2,.expert-insight-section h2,.sensory-spark-section h2{
+ .connecting-dot-section h2,.expert-insight-section h2, .expert-insight-section-p h2,.expert-insight-section h2,.sensory-spark-section h2{
      font-family: var(--big-bottom);
      color: var(--dark-blue);
      font-size: 50px;
@@ -422,7 +422,6 @@
      border-radius: 15px;
      text-align: center;
      margin: 30px 0px 30px 20px;
-}
 }
  .expert-content-p:last-child{
      background-color: #808ea7;
@@ -765,7 +764,7 @@
      .expert-dscription > h4{
          margin-top: 5px;
     }
-    .expert-insight-section h2{
+    .connecting-dot-section h2,.expert-insight-section h2, .expert-insight-section-p h2,.expert-insight-section h2,.sensory-spark-section h2{
         font-size: 35px;
     }
 }
@@ -931,7 +930,7 @@
      .left-content{
          padding: 0px;
     }
-     .search-bar > input::placeholder, {
+     .search-bar > input::placeholder{
          font-size: 10px;
     }
      .right-content h4{
@@ -942,20 +941,8 @@
          width: 65px;
          height: 65px;
     }
-     {
-         font-size: 12px 
-    }
-     {
-         font-size: 14px;
-    }
-     {
-         font-size: 16px;
-    }
      #footer a{
          font-size: 20px;
-    }
-     {
-         font-size: 25px;
     }
      .connecting-dot-section h2{
          margin-bottom: 0px;
@@ -963,7 +950,6 @@
   /*   .expert-content-p{
          margin:15px;
     }*/
-    }
    /*  .expert-insight-section{
          margin-left: -15px;
          margin-right: -15px;
@@ -990,7 +976,11 @@
          top: 288px;
          left: 0px;
          margin-bottom: 40px;
-
+    }
+     .pdf-part img{
+        max-width: 60px;
+        height: auto;
+        object-position: center;
     }
 }
 
@@ -1001,12 +991,12 @@
      .pdf-part{
          margin-right: 10px;
     }
-     .pdf-part > h3{
+  /*   .pdf-part > h3{
          font-size: 9px;
     }
      .pdf-part .dow-btn{
          font-size: 7px;
-    }
+    }*/
 }
 @media(max-width: 520px){
     .expert-content-section{
@@ -1014,6 +1004,11 @@
     }
     .expert-content-p{
         margin: 0 auto 20px;
+    }
+     .pdf-part img{
+        max-width: 40px;
+        height: auto;
+        object-position: center;
     }
 }
 
@@ -1046,14 +1041,13 @@
      .expert-dscription > h4{
          font-size: 14px;
     }
-     .pdf-part > h3{
+    /* .pdf-part > h3{
          font-size: 7px;
-    }
+    }*/
     .tribe-circle-section h4{
-        top:-50px;
+        top:-5px;
     }
-     .pdf-part .dow-btn{
+    /* .pdf-part .dow-btn{
          font-size: 6px;
-    }
-    }
+    }*/
 }
