@@ -113,11 +113,20 @@
      padding-left: 55px;
      text-align: center;
 }
- .top-part{
+.top-part img,.bot-part img{
+    width: 120px;
+    height: auto;
+    object-position: center;
+    }
+    .top-part img:hover,.bot-part img:hover{
+        opacity: 0.5;
+    }
+ /*.top-part{
      background: #4473C5;
      width: 124px;
      height: 126px;
      border-radius: 20px;
+}
 }
  .bot-part{
      background: #01B0F1;
@@ -146,7 +155,7 @@
 }
  .dow-btn:hover{
      background-color: rgba(0,0,0,0.2);
-}
+}*/
  .third-part{
     padding-left: 45px;
  }
@@ -460,7 +469,15 @@
      margin-bottom: 10px;
      font-size: 20px;
 }
- .pdf-part{
+    .pdf-part{
+        margin-left: 10px;
+    }
+    .pdf-part img{
+        width: 80px;
+        height: auto;
+        object-position: center;
+    }
+/* .pdf-part{
      background: #01B0F1;
      color: var(--white);
      width: 98px;
@@ -488,7 +505,7 @@
 }
  .dow-btn:hover{
      background-color: rgba(0,0,0,0.2);
-}
+}*/
  .expert-bot-section{
      display: flex;
      margin: 15px 0px;
