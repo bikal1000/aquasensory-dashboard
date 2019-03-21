@@ -859,7 +859,7 @@
      #footer a{
          font-size: 25px;
     }
-    }
+
 }
  @media(max-width: 767px){
      .header-container{
@@ -993,6 +993,7 @@
 
     }
 }
+
  @media(max-width: 704px){
      .video-part a{
          flex: 0 0 49%;
@@ -1048,7 +1049,11 @@
      .pdf-part > h3{
          font-size: 7px;
     }
+    .tribe-circle-section h4{
+        top:-50px;
+    }
      .pdf-part .dow-btn{
          font-size: 6px;
+    }
     }
 }
