@@ -614,6 +614,20 @@
  #footer a{
      font-size: 39px;
 }
+#tribe-profile-livesearch {
+  background: var(--dark-blue);
+  position: relative;
+  z-index: 99;
+}
+.tribe-search_name{
+   padding: 5px 8px;
+}
+.tribe-search_name:hover {
+   background-color: var(--white);
+   color : var(--dark-blue);
+   display: block;
+   width: 100%;
+}
 
 
  @media(max-width: 1350px) and (min-width: 1200px){
