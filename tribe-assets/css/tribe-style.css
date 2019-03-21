@@ -427,6 +427,9 @@
      text-align: center;
      margin: 30px 0px 30px 20px;
 }
+.inactive{
+    background-color: #808ea7;
+}
 /* .expert-content-p > a{
      width: 170px;
      background: var(--dark-blue);
@@ -437,9 +440,9 @@
      margin: 30px 0px 30px 20px;
 }*/
 
-.expert-content-p:last-child{
+/*.expert-content-p:last-child{
      background-color: #808ea7;
-}
+}*/
  .expert-content-p h6{
      line-height: 1.5;
      padding-top: 15px;
