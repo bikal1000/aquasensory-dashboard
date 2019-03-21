@@ -591,6 +591,8 @@
  #footer a{
      font-size: 39px;
 }
+
+
  @media(max-width: 1350px) and (min-width: 1200px){
      .header-container{
          max-width: 935px;
@@ -630,6 +632,7 @@
          margin-top: 5px;
     }
 }
+
  @media(max-width: 1199px) and (min-width: 1066px){
      .header-container{
          max-width: 810px;
@@ -694,6 +697,9 @@
          margin-top: 5px;
     }
 }
+
+
+
  @media(max-width: 1065px) and (min-width: 992px){
      .header-container{
          max-width: 735px;
@@ -749,7 +755,7 @@
      .tribe-circle-section h4{
          left: 0px;
          width: 100%;
-         top: 597px;
+         top: 612px;
     }
      .right-content>input{
          font-size: 7px;
@@ -766,6 +772,15 @@
     }
     .connecting-dot-section h2,.expert-insight-section h2, .expert-insight-section-p h2,.expert-insight-section h2,.sensory-spark-section h2{
         font-size: 35px;
+    }
+    .top-part img, .bot-part img{
+        width: 101px;
+    }
+    .first-part img{
+        width: 218px;
+    }
+    .tribe-circle-images{
+        margin-top: 61px;
     }
 }
  @media(max-width: 991px){
@@ -820,7 +835,7 @@
      .tribe-circle-section h4{
          left: 0px;
          width: 100%;
-         top: 597px;
+         top: 609px;
     }
      .connecting-dot-section h2,.expert-insight-section-p h2,.expert-insight-section h2, .sensory-spark-section h2{
          font-size: 30px;
@@ -857,6 +872,9 @@
     }
      #footer a{
          font-size: 25px;
+    }
+     .tribe-circle-images{
+        margin-top: 61px;
     }
 
 }
