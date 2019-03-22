@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="tribe-assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="tribe-assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="tribe-assets/css/tribe-style.css">
-    <script src="js/jquery.min.js"></script>
+    <script src="tribe-assets/js/jquery.min.js"></script>
 
 </head>
 
@@ -47,15 +47,28 @@
                     </div>
                     <div class="tribe-expert-bot-section">
                         <div class="tribe-video-part">
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
-                            <a href="#" target='_blank'><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="https://www.youtube.com/embed/IydJuwA0yJ4" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="https://www.youtube.com/embed/IydJuwA0yJ4" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="https://www.youtube.com/embed/mQTxBOEQVgA" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
+                            <a data-video="" class="tribe-popup" href="#popupvideo"><img src="tribe-assets/images/video.png" alt="thumbnail"></a>
                         </div>
+                       
+                        <div class="tribe-popup-content">
+                            <div class="tpc-inner">
+                                <div class="tribe-video-content">
+                                    <button class="tribe-close-btn">&times;</button>
+                                    <div class="tribe-video-embed">
+                                        <iframe src="" id="tribe__video">
+                                     </iframe>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+
                         <div class="tribe-pdf-part">
                             <a href="#">
                             <img src="tribe-assets/images/Fact-Sheet-Download.png" alt="lesson plan">
@@ -74,6 +87,22 @@
         </footer>
 
     </div>
+     <script>
+        jQuery(document).ready(function(){
+            jQuery('.tribe-close-btn').click(function(){
+                jQuery(this).parents('.tribe-popup-content').fadeOut();
+                var videosrc = '';
+                jQuery('#tribe__video').attr('src', videosrc);
+            });
+        });
+        jQuery('.tribe-popup').click(function(){
+            var videosrc = jQuery(this).attr('data-video');
+            // videosrc = videosrc + '&autoplay=1';
+            jQuery('.tribe-popup-content').show();
+            jQuery('#tribe__video').attr('src', videosrc);
+            jQuery('#tribe__video')[0].play();
+        });
+    </script>
 </body>
 
 </html>
