@@ -97,10 +97,11 @@
         });
         jQuery('.tribe-popup').click(function(){
             var videosrc = jQuery(this).attr('data-video');
-            // videosrc = videosrc + '&autoplay=1';
+            videosrc = videosrc + '?autoplay=1';
             jQuery('.tribe-popup-content').show();
             jQuery('#tribe__video').attr('src', videosrc);
-            jQuery('#tribe__video')[0].play();
+           // jQuery('#tribe__video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+          
         });
     </script>
 </body>
