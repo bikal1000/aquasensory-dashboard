@@ -119,7 +119,7 @@
     object-position: center;
     }
     .tribe-top-part img:hover,.tribe-bot-part img:hover{
-        opacity: 0.tribe-5;
+        opacity: 0.5;
     }
  /*.tribe-top-part{
      background: #4473C5;
@@ -154,7 +154,7 @@
      padding: 9px;
 }
  .tribe-dow-btn:hover{
-     background-color: rgba(0,0,0,0.tribe-2);
+     background-color: rgba(0,0,0,0.2);
 }*/
  .tribe-third-part{
     padding-left: 45px;
@@ -164,7 +164,7 @@
      padding-left: 66px;
 }
  .tribe-third-part img:hover{
-     opacity: 0.tribe-7;
+     opacity: 0.7;
 }
  .tribe-fourth-part{
      height: 120px;
@@ -263,7 +263,7 @@
      left: -98px;
      position: absolute;
      top: -113px;
-     transition: all 0.tribe-3s;
+     transition: all 0.3s;
      transform: scale(0);
      transform-origin: right bottom;
      z-index: -1;
@@ -497,7 +497,7 @@
         object-position: center;
     }
     .tribe-pdf-part img:hover{
-        opacity: 0.tribe-5;
+        opacity: 0.5;
     }
 /* .tribe-pdf-part{
      background: #01B0F1;
