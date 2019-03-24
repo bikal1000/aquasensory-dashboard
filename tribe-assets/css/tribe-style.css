@@ -1155,7 +1155,7 @@
    position: relative;
    z-index: 99;
    overflow: auto;
-   text-align: center;
+   text-align: left;
    max-height: 150px;
 }
 .search_name{
