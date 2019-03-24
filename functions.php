@@ -151,7 +151,7 @@ function getposts_list(){
         echo '<ul>';
         while ( $search_results->have_posts() ) {
           $search_results->the_post();
-          echo '<li><a href="'.get_the_permalink().'" class="post_search_name">'. get_the_title() . '</li>';
+          echo '<li class="post_search_name" ><a href="'.get_the_permalink().'">'. get_the_title() . '</li>';
         }
         echo '</ul>';
         /* Restore original Post Data */

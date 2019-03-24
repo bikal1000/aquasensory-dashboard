@@ -1138,17 +1138,23 @@
     position: absolute;
     background: #0f123d;
     width: 100%;
-    padding-left: 20px;
     z-index: 9999;
-    overflow-y: scroll;
+   overflow: auto;
     color: #fff;
     max-height: 250px;
+}
+#post-livesearch .post_search_name:hover{
+    background: #fff;
+    color:#0f123d;
+}
+#post-livesearch .post_search_name > a{
+    padding-left: 20px;
 }
 #profile-livesearch {
    background: var(--dark-blue);
    position: relative;
    z-index: 99;
-   overflow-y:scroll;
+   overflow: auto;
    text-align: center;
    max-height: 150px;
 }
