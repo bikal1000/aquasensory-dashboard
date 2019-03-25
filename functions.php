@@ -217,4 +217,51 @@ if (!is_admin()) {
   }
 add_filter('pre_get_posts','tribepost_search_filter');
 }
+
+
+
+add_action( 'customize_register', 'custom_fb_field_register_theme_customizer' );
+/*
+ * Register Our Customizer Stuff Here
+ */
+function custom_fb_field_register_theme_customizer( $wp_customize ) {
+  // Create custom panel.
+  $wp_customize->add_panel( 'fb_appid_blocks', array(
+    'priority'       => 500,
+    'theme_supports' => '',
+    'title'          => __( 'Facebook', 'custom_fb_field' ),
+    'description'    => __( 'Set editable text for certain content.', 'custom_fb_field' ),
+  ) );
+  // Add Footer Text
+  // Add section.
+  $wp_customize->add_section( 'facebook_appid' , array(
+    'title'    => __('Facebook APP ID','custom_fb_field'),
+    'panel'    => 'fb_appid_blocks',
+    'priority' => 10
+  ) );
+  // Add setting
+  $wp_customize->add_setting( 'facebook_appid_text_block', array(
+     'default'           => __( '', 'custom_fb_field' ),
+     'sanitize_callback' => 'sanitize_text'
+  ) );
+  // Add control
+  $wp_customize->add_control( new WP_Customize_Control(
+      $wp_customize,
+    'facebook_appid',
+        array(
+            'label'    => __('Facebook APP ID', 'custom_fb_field' ),
+            'section'  => 'facebook_appid',
+            'settings' => 'facebook_appid_text_block',
+            'type'     => 'text'
+        )
+      )
+  );
+  // Sanitize text
+  function sanitize_text( $text ) {
+      return sanitize_text_field( $text );
+  }
+}
+
 ?>
+
+
