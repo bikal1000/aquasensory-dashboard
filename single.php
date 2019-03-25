@@ -17,7 +17,7 @@ if (strcmp($currentcatid, $cat_list)) {
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
 					<div class="entry-content">
 						<h2 class="tribe-post-title"><?php the_title(); ?></h2>
-						<p class="tribe-post-content"><?php the_content(); ?></p>
+						<?php the_content(); ?>
 
 					<?php
 						$facebook_appid  = get_theme_mod( 'facebook_appid_text_block');
@@ -37,6 +37,7 @@ if (strcmp($currentcatid, $cat_list)) {
 
 						<div id="tab-2" class="tab-content">
 							<div class="tribe-custom-comment">
+								<p class="tribe-counter"><?php echo get_comments_number(); ?>&nbsp;<span class="comment_title">Comment</span></p>
 									<?php 
 
 										if ( comments_open() || get_comments_number() ) :

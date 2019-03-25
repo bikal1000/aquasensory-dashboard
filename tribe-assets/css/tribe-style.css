@@ -658,24 +658,50 @@
  }
  .widgettitle{
     font-weight: bold;
+    background: #203864;
+    color: #fff !important;
+    padding: 8px 10px;
+    margin-bottom: 5px;
  }
  .et_pb_post .entry-content{
     padding-top: 20px;
  }
  .tribe-dash .et_pb_widget ul{
-    line-height: 1.1;
+    line-height: 1.25;
     text-transform: capitalize;
+    padding-left: 10px;
+    font-weight: 500;
+    font-family: var(--vag-rounded);
  }
+ 
   .tribe-dash .logged-in-as,.comment-form-comment > label{
     display: none;
+  }
+  #respond span{
+    display: none;
+  }
+  .tribe-custom-comment{
+    color: #000000;
+    font-weight: bold;
+    font-size: 10px;
+   border: 0 unset !important;
+  }
+.tribe-dash #commentform .form-submit .et_pb_button{
+    font-size: 15px;
+    background-color:#660088 !important;
+  }
+  .tribe-dash #commentform .form-submit .et_pb_button:hover{
+        background: unset;
   }
 .tribe-post-title{
     font-family: var(--big-bottom);
     font-size: 25px;
     line-height: 20px;
+    padding-bottom: 25px;
 }
-.tribe-post-content{
-    padding-top: 25px;
+.tribe-main .entry-content p{
+    font-family: var(--vag-rounded);
+    line-height: 1.6;
 }
 .tab-post{
     padding-top: 25px;
